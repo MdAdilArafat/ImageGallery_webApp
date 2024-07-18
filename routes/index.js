@@ -33,7 +33,7 @@ router.post('/upload',isLoggedIn,upload.single('file'),async (req,res,next)=>{
 
 router.get("/",function(req,res){
   res.render("index")
-}) 
+})   
 
 // feed_page
 router.get("/feed",function(req,res){
