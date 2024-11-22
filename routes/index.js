@@ -57,7 +57,7 @@ router.post('/register',function(req,res){
   }) 
   
 }) 
-
+ 
 router.get("/profile",isLoggedIn,async function(req,res){
   let user = await userModel.findOne({
     username: req.session.passport.user
